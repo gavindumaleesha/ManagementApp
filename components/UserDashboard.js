@@ -24,7 +24,7 @@ export default class UserDashboard extends Component {
                     >
                         <View style={styles.headerIcons}>
                             <View style={styles.leftIcon}>
-                                <TouchableOpacity style={styles.iconButton}>
+                                <TouchableOpacity style={styles.iconButton} onPress={() => navigation.navigate('Login')}>
                                     <FontAwesomeIcon icon="arrow-circle-left" size={25} color="white" />
                                     <Text style={styles.headerText} >LOG OUT</Text>
                                 </TouchableOpacity>

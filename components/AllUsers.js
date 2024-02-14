@@ -22,7 +22,7 @@ class AllUsers extends Component {
                     >
                         <View style={styles.headerIcons}>
                             <View style={styles.leftIcon}>
-                                <TouchableOpacity style={styles.iconButton}>
+                                <TouchableOpacity style={styles.iconButton} onPress={() => navigation.navigate('UserDashboard')}>
                                     <FontAwesomeIcon icon="arrow-circle-left" size={25} color="white" />
                                 </TouchableOpacity>
                             </View>
@@ -44,7 +44,7 @@ class AllUsers extends Component {
                         start={[0, 0]}
                         end={[1, 1]}
                     >
-                        <TouchableOpacity>
+                        <TouchableOpacity onPress={() => navigation.navigate('UserDashboard')}>
                             <FontAwesomeIcon icon="home" size={36} color="white" />
                         </TouchableOpacity>
                     </LinearGradient>
